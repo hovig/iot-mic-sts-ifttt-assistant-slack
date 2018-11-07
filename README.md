@@ -11,11 +11,15 @@
 
 ## Introduction
 
-The idea behind this project is to provide a hands-on fun workshop using Node-RED and Watson's cognitive solutions for audio conversations. Audio tends to have its own challenges and this step-by-step tutorial hopefully can help you enjoy coding and also target your goals through this experience.
+The idea behind this project is to teach you how to build an IoT application with multiple services to send commands and receive responses through audio conversations using Node-RED Starter and Watson cognitive services. While Audio tends to have its own challenges, this code project should help you address those challenges, and have a little fun along the way.
 
-This pattern uses the Car Dashboard Conversation workspace that comes by default when you create the Assistant (formerly Conversation) service. The reason is to avoid complications but you can always create or import your own conversation workspace, this might be a good idea to do a separate tutorial once this pattern gets consumed easily by developers.
+This project uses the Speech to Text, Text to Speech and IoT Platform services to take an audio sentence and translate it into a command that is sent to a registered device. A registered device is a device that is connected to the IoT Platform and is ready to send topics and receive commands.
 
-After the completion of this tutorial, this application will record your talk and send it over to Watson's services to retrieve, based on your request, the weather data of a city.. Or can send commands and receive responses through a conversation, for example, to turn on lights or to play a music and many more. Then IFTTT will trigger events each time there's a request coming from the microphone and it will be posted on the Slack the specific event made.
+While there are a number of devices to choose from, I chose to use a Nodemcu v2 (ESP8266 WiFi-based microcomputer) with MQTT. You can choose to use any other device with mqtt or http communications.
+
+Between the audio sentence and the command process, I’ve implemented IFTTT to Slack messaging. Every time a command is sent to the device, this same command will be displayed on a Slack channel after the command completes, such as brewing coffee or turning on or off an LED light.
+
+Then, IFTTT will trigger events each time there's a request coming from the microphone, and it will be posted on the Slack the specific event made. (I tried to use Amazon Echo to take in commands and send it to IFTTT then to our code (to behave same as the microphone currently in the design), but there's a known issue that it's not recognizing the IFTTT trigger setup.)
 
 
 ![](img/hw-setup.jpg)
