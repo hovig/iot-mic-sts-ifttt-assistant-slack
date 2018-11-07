@@ -32,13 +32,13 @@ If you'd like to watch the videos, I have one video shows how the coffee machine
 
 ## TUTORIAL STEPS
 
-* Step 1 & 5 - [Node-RED](steps/nodered.md)
-* Step 2 - [Speech-To-Text](steps/stt.md)
-* Step 3 - [Internet of Things](steps/iot.md)
-* Step 4a1 & 4a2 - [IFTTT and Slack](steps/ifttt.md)
-* Step 4b1 - [Tone Analyzer](steps/tone.md)
-* Step 4b2 - [Assistant](steps/conversation.md)
-* Step 4b3 - [Text-To-Speech](steps/tts.md)
+* Step 1 - [Create an IBM Cloud app using the Node-RED Starter application.](steps/nodered.md) (microphone & audio player)
+* Step 2 - [Add Speech-To-Text service from IBM Cloud Catalog.](steps/stt.md)
+* Step 3 - [Add Internet of Things service from IBM Cloud Catalog.](steps/iot.md)
+* Step 4 - [IFTTT and Slack setups.](steps/ifttt.md)
+* Step 5 - Similar to Step 3, just make sure you have IoT service connected to Node-RED Starter.
+* Step 6 - [Add Text-To-Speech service from IBM Cloud Catalog.](steps/tts.md)
+* Step 7 - [Back to Node-RED Starter application, as done in Step 1, to make sure that the microphone and the audio are installed & working.](steps/nodered.md)
 
 
 ## Important Naming Notes
